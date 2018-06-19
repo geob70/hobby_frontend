@@ -1,0 +1,56 @@
+ body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #050f1a;
+ }
+
+ 
+ .margin {
+      margin-bottom: 55px;
+ }
+ .img-circle{
+      /* margin-top: 4%; */
+      margin-bottom: 8%;
+      border-radius: 50px 50px 50px 50px;
+      width: 20%;
+      height:30%;
+ }
+
+ .bg-1 {
+      background-color: #1abc9c;
+      /* Green */
+      color: #041118;
+ }
+
+ .bg-2 {
+      background-color: #474e5d;
+      /* Dark Blue */
+      color: #ffffff;
+ }
+
+ .bg-3 {
+      background-color: #ffffff;
+      /* White */
+      color: #555555;
+ }
+
+ .bg-4 {
+      background-color: #2f2f2f;
+      /* Black Gray */
+      color: #fff;
+ }
+
+ .container-fluid {
+      margin-top: -3%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+ }
+
+ /* .contain {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      margin-left: 25%;
+      margin-right: 20%;
+ } */
+
+ 

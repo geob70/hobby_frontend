@@ -1,0 +1,14 @@
+.footer {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     text-align: center;
+     background-color: rgb(185, 179, 179);
+}
+.foot{
+     
+     font-feature-settings: "blws";
+     font-weight: bolder;
+     font-style: normal;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 16px
+}

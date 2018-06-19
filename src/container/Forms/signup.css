@@ -1,0 +1,190 @@
+.sign{
+     padding: 50px;
+     margin-left: 30%;
+     margin-right: 30%;
+     margin-bottom: 15%;
+}
+.signb {
+     background-color: #4CAF50;
+     transition-duration: 0.4s;
+     padding: 6px 15px;
+     border: none;
+     border-radius: 4%;
+     color: whitesmoke;
+     float: right;
+}
+
+.signb:hover {
+     color: #4CAF50;
+     background-color: whitesmoke;
+     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.sign_input {
+     font-size: 18px;
+     padding: 10px 10px 10px 5px;
+     display: block;
+     width: 300px;
+     /* border: none; */
+     /* outline:none; */
+     border-bottom: 1px solid #d5d4d2;
+}
+
+.sign_input:focus {
+     outline: none;
+     border:1px solid orangered;
+}
+
+/* .label ======================================= */
+
+.label {
+     color: #999;
+     font-size: 18px;
+     font-weight: normal;
+     position: absolute;
+     pointer-events: none;
+     left: 5px;
+     top: 10px;
+     transition: 0.2s ease all;
+     -moz-transition: 0.2s ease all;
+     -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+
+.sign_input:focus~label,
+.sign_input:valid~label {
+     top: -20px;
+     font-size: 14px;
+     color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+
+.barr {
+     position: relative;
+     display: block;
+     width: 876px;
+}
+
+
+.barr:after {
+     content: '';
+     height: 2px;
+     width: 0;
+     bottom: 1px;
+     position: absolute;
+     background: orangered;
+     transition: 0.2s ease all;
+     -moz-transition: 0.2s ease all;
+     -webkit-transition: 0.2s ease all;
+}
+/* 
+.barr:before {
+     left: 60%;
+} */
+
+.barr:after {
+     right: 50%;
+}
+
+/* active state */
+
+.sign_input:focus~.barr:before,
+.sign_input:focus~.barr:after {
+     width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+     position: absolute;
+     height: 60%;
+     width: 100px;
+     top: 25%;
+     left: 0;
+     pointer-events: none;
+     opacity: 0.5;
+}
+
+/* active state */
+
+.sign_input:focus~.highlight {
+     -webkit-animation: inputHighlighter 0.3s ease;
+     -moz-animation: inputHighlighter 0.3s ease;
+     animation: inputHighlighter 0.3s ease;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+     position: relative;
+     background-color: #fefefe;
+     margin-top: 10%;
+     margin-left:25%;
+     padding: 0;
+     border: 1px solid #888;
+     width: 50%;
+     height: 220px;
+     box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+     -webkit-animation-name: animatetop;
+     -webkit-animation-duration: 0.4s;
+     animation-name: animatetop;
+     animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+     from {
+          top: -300px;
+          opacity: 0
+     }
+     to {
+          top: 0;
+          opacity: 1
+     }
+}
+
+@keyframes animatetop {
+     from {
+          top: -300px;
+          opacity: 0
+     }
+     to {
+          top: 0;
+          opacity: 1
+     }
+}
+
+.modal-body {
+     padding: 2px 16px;
+}
+/* The Close Button */
+
+.close {
+     color: white;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+}

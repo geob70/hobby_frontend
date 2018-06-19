@@ -1,0 +1,22 @@
+.navbar {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.p {
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(42, 187, 42);
+    letter-spacing: 5px;
+    text-decoration: none;
+    cursor: default;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+    text-decoration-line: none;
+}
